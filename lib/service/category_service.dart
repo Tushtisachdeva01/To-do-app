@@ -9,4 +9,7 @@ class CategoryService {
       category.categoryMap(),
     );
   }
+  readCategory() async{
+    return await _repository.readData('categories');
+  }
 }
